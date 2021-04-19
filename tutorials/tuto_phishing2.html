@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="icon" href="../images/favicon.ico" />
+	<link rel="stylesheet" href="../css/style.css"/>
+    <title>Phishing | Simuler un hotspot wifi avec wifiphisher !</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="background_header">
+      <a style="float:left" class="btn_home" href="../index.html"><img class="kali_logo_header" src="../images/kali logo.jpg" width="30" height="30"></a>
+      <img style="float:right" class="header_cross" src="../images/cross_reducer.png" width="100" height="25">
+      <h1 class="center_window">root@kali: ~/Wifiphisher</h1>
+    </div>
+    </div>
+    <h1 class="center_white">Faire du phishing (versio amélioré)</h1>
+    <h2 class="text">Dans ce tuto nous allons voir comment faire un phishing avancé en créant un faux réseau wifi. Ceci est a faire dans la rue.</h2>
+    <p class="text">Avant tous, il nous faut un logiciel, appelé wifiphisher, un acces à un ordinateur, et il faut que as carte wifi puissent se mettre en mode monitor, de plus il est recommandé d'etre dans un endroit ou les gens cherchent une connexion internet, telle que les aéroport, les fast-food ou encore les gares. Si vous vous trouvez dans un de ces lieux la, vous avez de très grande chance de trouver une victime.</p>
+
+        <div class="Part1">
+          <h2 class="text">root@kali : cd tuto_wifiphisher/</h2>
+          <h2 class="text">root@kali : nano tuto_part1.txt</h2>
+            <p class="text">On commence en installant wifiphisher, pour cela vous devais faire dans un terminale <code>sudo git clone https://github.com/wifiphisher/wifiphisher</code></br>
+            puis on accede au dossier d'installation en faisant un cd, je pense ne pas avoir à vous l'expliquer, puis on lance le setup.py <code>sudo python setup.py install</code>, voila, wifiphisher est installé, plus qu'a le lancer en faisant <code>sudo wifiphisher</code>.</p>
+        </div>
+
+        <div class="Part2">
+          <h2 class="text">root@kali : nano tuto_part2.txt</h2>
+            <p class="text">Maintenant, on sélectionne le wifi à dupliquer. On sélectionne le type d'attaque à utiliser, pour nous on sélectionne <code>OAuth Login Page</code>.</p>
+        </div>
+
+        <div class="conclusion">
+          <h2 class="text">root@kali : nano Conclusion.txt</h2>
+            <p class="text">Voila c'est fini, plus qu'à attendre qu'une personne crédule n'accede à votre hotspot et s'y connecte, avec un peu de chance une personne se connectera en utilisant ces memes identifiants que son facebook ou son gmail, ce qui fais que vous avez la main mise.</p>
+        </div>
+    </body>
+	
+
+    <div class="footer">
+      <p>Par Roméo Chevrier et Quentin Eyraud</br>Tous ce qui est publié sur le site n'est qu'a but éducatif.</p>
+    </div>
+</html>

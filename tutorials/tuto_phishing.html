@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<link rel="icon" href="../images/favicon.ico" />
+	<link rel="stylesheet" href="../css/style.css"/>
+    <title>Phishing | Utiliser ngrok et apache !</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="background_header">
+      <a style="float:left" class="btn_home" href="../index.html"><img class="kali_logo_header" src="../images/kali logo.jpg" width="30" height="30"></a>
+      <img style="float:right" class="header_cross" src="../images/cross_reducer.png" width="100" height="25">
+      <h1 class="center_window">root@kali: ~/Ngrok & Apache2</h1>
+    </div>
+    </div>
+    <h1 class="center_white">Faire du phishing</h1>
+    <h2 class="text">Dans ce tuto nous allons voir comment faire du phishing pour voler des identifiants</h2>
+    <p class="text">Avant de commencer, on aura besoin de quelques prérequis, telle que ce que nous propose <a href="https://ngrok.com/">ngrok</a> on verra l'installation dans la prochaine partie.</br>
+    Il nous faudra aussi un serveur web, peut etre fais sous apache2 ou autre, mais nous en parlerons aussi dans quelques instants, ainsi qu'un nom de domaine, vous pouvez en obtenir facilement avec quelques techniques dont je ne parlerez pas ici pour des soucis de légalités.</br>
+    Il vous faudra aussi un template de site, facilement trouvable, pour ma part j'ai peu me procurer un pack avec une dizaine de sites gratuitement.</p>
+
+        <div class="Part1">
+          <h2 class="text">root@kali : cd ngork_apache/</h2>
+          <h2 class="text">root@kali : nano tuto_part1.txt</h2>
+            <p class="text">Pour commencer, créez un compte, et téléchargez le zip, puis extrayez le dans le dossier de votre choix.</br>
+            Ensuite accédez à ce dossier dans votre terminale, en faisant <code>cd votre_dossier/</code>.</br>
+            Puis on tape <code>sudo mv ngrok /usr/bin/</code>, puis pour vérifier que tous est installé, faites <code>ngrok help</code>. Vous devriez voir tout les options.</br>
+            Maintenant on va installer Apache2, si vous avez un serveur web à distance prenez le, sinon faite le depuis votre machine, pour se faire faites, <code>apt-get install apache2</code>.</br>
+            Et enfin, pour lancer le tous faites un petit <code>service apache2 start</code> et <code>ngrok http 80</code>. Voila, on a installé ngrok et apache.</br>
+            Pour vérifier que tous va bien, dans votre moteur de recherche faite <code>http://localhost</code> ou tapez l'ip local de votre machine.</br>
+            Enfin, ouvrez le port 80 de votre box.</p>
+        </div>
+
+        <div class="Part2">
+          <h2 class="text">root@kali : nano tuto_part2.txt</h2>
+            <p class="text">Maintenant installons la page de phishing, pour nous faciliter la vie on va le faire à la main, copiez la page de phishing de votre site désiré et placez la dans le dossier <code>/var/www/html/</code> c'est la ou se trouve le dossier Apache2.</br>
+            La page web principale doit s'appeler <code>index.php</code>.</p>
+        </div>
+
+        <div class="conclusion">
+          <h2 class="text">root@kali : nano tuto_part3.txt</h2>
+            <p class="text">Voila vous avez votre site de phishing, vous pouvez l'envoyer par mail en utilisant un nom de domaine telle que faceb00k.fr ou autres.</br>
+            Pour votre sécurité, je déconseille d'héberger le site de phishing chez vous, vous pouvez l'héberger chez des petits hébergeur qui ne font pas payer les premiers jours pour spammer vos victimes et ainsi ne rien payer.</br>
+            Dans un prochain tuto on verra comment faire ca avec un faux réseau wifi. Et c'est juste <a href="tuto_phishing2.html">ici</a>.</p>
+        </div>
+    </body>
+
+    <div class="footer">
+      <p>Par Roméo Chevrier et Quentin Eyraud</br>Tous ce qui est publié sur le site n'est qu'a but éducatif.</p>
+    </div>
+</html>
