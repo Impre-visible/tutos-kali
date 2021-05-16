@@ -12,7 +12,12 @@
 <p>Le logo en haut a gauche est <a href="https://">cliquable</a> et permet de revenir au menu.</p>
 
 <p>Les curseurs et les polices de textes sont celles utilisées dans un terminal ou de base dans l'os</p>
-
 <p>Les couleurs sont celles utilisées dans l'os</p>
-<a><img src="http://dump.thecybershadow.net/6c736bfd11ded8cdc5e2bda009a6694a/colortext.svg"/></a>
 
+<p>Le background du site est un fond d'écran de base de Kali Linux, les icons de fermeture, reduction et autres sont ceux de bases, j'ai juste ameliorée la qualité.</p>
+
+
+<h1>To do list</h1>
+<ul>
+<li>❌ | Ajouter plusieurs styles d'interfaces. (Parrot OS, Mac OS, Windows 10)</li>
+</ul>
