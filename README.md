@@ -1,4 +1,3 @@
-# tutos-kali
-<h1>Le site web de mon travail de SNT</h1>
+# Site Web Simple en HTML5 et CSS3.
 
-<p>Projet de groupe en SNT</p>
+#Le design du site
