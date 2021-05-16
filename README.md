@@ -21,8 +21,8 @@
 <p>Le background du site est un fond d'écran de base de Kali Linux, les icons de fermeture, reduction et autres sont ceux de bases, j'ai juste ameliorée la qualité.</p>
 
 <p>Les curseurs sont ceux de Adwaita</p>
-<img src="http://www.allo-image.net/stockimg/vignette/121228815660a13755455d9adwaita_normal_select.png" border="0">Curseur simple
-<img src="http://www.allo-image.net/stockimg/vignette/168452668060a137552bcf5adwaita_link_select.png" border="0">Curseur de survol de lien
+<a><img src="http://www.allo-image.net/stockimg/vignette/121228815660a13755455d9adwaita_normal_select.png" border="0">Curseur simple</a>
+<a><img src="http://www.allo-image.net/stockimg/vignette/168452668060a137552bcf5adwaita_link_select.png" border="0">Curseur de survol de lien</a>
 
 
 <h1>To do list</h1>
