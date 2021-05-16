@@ -10,3 +10,8 @@
 <p>Le design reprends celui d'un terminal de commande sous <a href = "https://www.kali.org/">Kali Linux</a></p>
 <p>Le texte central en haut, commencant par "root@kali: ~" indique a l'utilisateur sur quel page il se trouve.</p>
 <p>Le logo en haut a gauche est <a href="https://">cliquable</a> et permet de revenir au menu.</p>
+
+<p>Les curseurs et les polices de textes sont celles utilisées dans un terminal ou de base dans l'os</p>
+
+<p>Les couleurs sont celles utilisées dans l'os</p>
+[#276fd7]
