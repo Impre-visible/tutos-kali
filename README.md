@@ -14,8 +14,9 @@
 <p>Les curseurs et les polices de textes sont celles utilisées dans un terminal ou de base dans l'os</p>
 <p>Les couleurs sont celles utilisées dans l'os</p>
 
-- ![#d8d8d8](https://via.placeholder.com/15/d8d8d8/000000?text=+) `#d8d8d8`
-- - ![#276fd7](https://via.placeholder.com/15/276fd7/000000?text=+) `#276fd7`
+- ![#276fd7](https://via.placeholder.com/15/276fd7/000000?text=+) `#276fd7`Pour les titres.
+- ![#d8d8d8](https://via.placeholder.com/15/d8d8d8/000000?text=+) `#d8d8d8`Pour les paragraphes et autres.
+- ![#6e6e6e](https://via.placeholder.com/15/6e6e6e/000000?text=+) `#6e6e6e`Pour le background des codes.
 
 <p>Le background du site est un fond d'écran de base de Kali Linux, les icons de fermeture, reduction et autres sont ceux de bases, j'ai juste ameliorée la qualité.</p>
 
