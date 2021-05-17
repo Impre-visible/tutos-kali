@@ -186,7 +186,6 @@ thead, tfoot {
 
 
 .kali_logo_header{
-	border-radius: 100px;
 	padding-top: 0.3%;
 	cursor: url("../cursor/Adwaita/Adwaita-Link Select.cur") ,auto;
 }
@@ -204,9 +203,8 @@ thead, tfoot {
 }
 
 .background_header{
-	background-color: #181a20;
+	background-color: #181a207a;
 	padding: 2px;
-	opacity: 0.8;
 }
 
 .center_window{
@@ -222,8 +220,7 @@ thead, tfoot {
 }
 
 .btn_home:active, .btn_home:focus, .btn_home:visited, .btn_home:link{
-	color: rgba(94, 94, 94, 0);
-	text-decoration: none;
+	color: rgb(94, 94, 94);
 	padding-top: 5px;
 	padding-left: 5px;
 	padding-bottom: 0px;
@@ -236,7 +233,6 @@ thead, tfoot {
 	text-align: center;
 	font-size: 14px;
 	padding-right: 0%;
-	padding-left: 7%;
 	color: white;
 	margin-left: 0%;
 }
