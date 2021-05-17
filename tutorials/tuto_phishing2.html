@@ -5,17 +5,22 @@
 	<link rel="icon" href="../images/favicon.ico" />
 	<link rel="stylesheet" href="../css/style.css"/>
     <title>Phishing | Simuler un hotspot wifi avec wifiphisher !</title>
+    <script src="../js/settings.js"></script>
   </head>
-  <body>
-    <div class="header">
+  <body id="body">
+    <div id="header" class="header">
       <div class="background_header">
-      <a style="float:left" class="btn_home" href="../index.html"><img class="kali_logo_header" src="../images/kali logo.jpg" width="30" height="30"></a>
-      <a style="float:left" class="btn_home" href="../settings.html"><img class="settings_header" src="../images/settings.png" width="30" height="30"></a>
-      <img style="float:right" class="header_cross" src="../images/cross_reducer.png" width="100" height="25">
-      <h1 class="center_window">root@kali: ~/Wifiphisher</h1>
+        <a style="float: left" class="btn_home" href="../index.html">
+          <img class="kali_logo_header" src="../images/kali logo.jpg" width="30" height="30" id="home"/>
+        </a>
+        <a style="float: left" class="btn_home" href="../settings.html">
+          <img class="settings_header" src="../images/settings.png" width="30" height="30" id="settings"/>
+        </a>
+        <img id="reducer" style="float: right" class="header_cross" src="../images/cross_reducer.png" width="100" height="25">
+        <h1 id="title" class="center_window">Wifiphisher</h1>
+      </div>
     </div>
-    </div>
-    <h1 class="center_white">Faire du phishing (versio amélioré)</h1>
+    <h1 class="center_white">Faire du phishing (version améliorée)</h1>
     <h2 class="text">Dans ce tuto nous allons voir comment faire un phishing avancé en créant un faux réseau wifi. Ceci est a faire dans la rue.</h2>
     <p class="text">Avant tous, il nous faut un logiciel, appelé wifiphisher, un acces à un ordinateur, et il faut que as carte wifi puissent se mettre en mode monitor, de plus il est recommandé d'etre dans un endroit ou les gens cherchent une connexion internet, telle que les aéroport, les fast-food ou encore les gares. Si vous vous trouvez dans un de ces lieux la, vous avez de très grande chance de trouver une victime.</p>
 
