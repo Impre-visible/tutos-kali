@@ -1,0 +1,42 @@
+<<<<<<< HEAD
+﻿[Wait]
+Path=Adwaita - Busy.ani
+
+[SizeNWSE]
+Path=Adwaita - Diagonal Resize 1.cur
+
+[SizeNESW]
+Path=Adwaita - Diagonal Resize 2.cur
+
+[NWPen]
+Path=Adwaita - Handwriting.cur
+
+[Help]
+Path=Adwaita - Help Select.cur
+
+[SizeWE]
+Path=Adwaita - Horizontal Resize.cur
+
+[Hand]
+Path=Adwaita - Link Select.cur
+
+[SizeAll]
+Path=Adwaita - Move.cur
+
+[Arrow]
+Path=Adwaita - Normal Select.cur
+
+[Crosshair]
+Path=Adwaita - Precision Select.cur
+
+[IBeam]
+Path=Adwaita - Text Select.cur
+
+[No]
+Path=Adwaita - Unavailable.cur
+
+[SizeNS]
+Path=Adwaita - Vertical Resize.cur
+
+[AppStarting]
+Path=Adwaita - Working In Background.ani

