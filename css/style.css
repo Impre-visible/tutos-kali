@@ -237,7 +237,7 @@ tfoot {
 .select {
   position: absolute;
   top: 25%;
-  left: 40%;
+  left: 41.5%;
 }
 
 select {
@@ -322,5 +322,16 @@ select {
 
 .footer {
   text-align: center;
-  padding: 15px;
+  padding: 1.2%;
+}
+
+.informations {
+  text-align: center;
+  padding-top: 12%;
+  color: #d8d8d8;
+}
+
+.informations-p {
+  text-align: center;
+  margin-right: 5%;
 }
