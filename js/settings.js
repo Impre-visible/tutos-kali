@@ -4,6 +4,7 @@ function addCookie() {
   modal = document.querySelector("#modal");
   document.cookie = "theme=kali";
   modal.style.visibility = "hidden";
+  window.location.reload();
 }
 
 function extractCookies() {
