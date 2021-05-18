@@ -35,7 +35,7 @@ function changeTheme(value) {
     case "1":
     case "kali":
       title.innerText = "root@kali: ~/" + title.innerText;
-      home.src = "../images/kali_logo_rounded.png";
+      home.src = "../images/kali logo.jpg";
       settings.src = "../images/settings.png";
       reducer.src = "../images/cross_reducer.png";
       header.style.backgroundColor = "#181a207a";
@@ -80,3 +80,18 @@ function changeTheme(value) {
       break;
   }
 }
+
+$(document).ready(function () {
+  $(".popup").hide();
+  $(".openpop").click(function (e) {
+    e.preventDefault();
+    $("iframe").attr("src", $(this).attr("href"));
+    $(".links").fadeOut("slow");
+    $(".popup").fadeIn("slow");
+  });
+
+  $(".close").click(function () {
+    $(this).parent().fadeOut("slow");
+    $(".links").fadeIn("slow");
+  });
+});
