@@ -1,4 +1,4 @@
-# Site Web Simple en HTML5 et CSS3.
+# Site Web Simple en HTML5, CSS3 et JS.
 <ul>
   <li>
     Le lien du site : <a href = "http://tutos-kali.cf/">tutos-kali.cf</a>
@@ -31,3 +31,7 @@
   <li> ✔️ | Agrandir les images au clique.</li>
   <li> ❌ | Ajout d'un modal pour le(s) cookie(s).</li>
 </ul>
+
+<h2>Remerciements : </h2>
+<p>Un grand merci à <a href="https://github.com/allombar">Symbiosis</a> pour son aide sur tous le code en js, et son super système de cookie.</p>
+<p>Un énorme merci à tous ceux qui m'ont aidé, principalement sur <a href="https://discord.gg/gpZemxGmrD">Dev'Area</a> et au discord de <a href="https://discord.gg/uGMhVKJ2ND">NaN</a></p>
