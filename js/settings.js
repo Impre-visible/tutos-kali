@@ -1,16 +1,17 @@
 var dumpCookie = extractCookies();
 
 if (!dumpCookie.theme) {
-  document.cookie = "theme=default";
+  document.cookie = "theme=kali";
 }
 
 function extractCookies() {
-  return document.cookie.split("; ").reduce(function (acc, iteration) {
-    const pair = iteration.split("=");
-    acc[pair[0]] = pair[1][0] === "{" ? JSON.parse(pair[1]) : pair[1];
+  return document.cookie.split("; ").reduce((acc, curr) => {
+    const pair = curr.split("=");
+    acc[pair[0]] = pair[1];
     return acc;
   }, {});
 }
+
 window.addEventListener("DOMContentLoaded", function () {
   select = document.querySelector("#select");
   home = document.querySelector("#home");
@@ -80,18 +81,3 @@ function changeTheme(value) {
       break;
   }
 }
-
-$(document).ready(function () {
-  $(".popup").hide();
-  $(".openpop").click(function (e) {
-    e.preventDefault();
-    $("iframe").attr("src", $(this).attr("href"));
-    $(".links").fadeOut("slow");
-    $(".popup").fadeIn("slow");
-  });
-
-  $(".close").click(function () {
-    $(this).parent().fadeOut("slow");
-    $(".links").fadeIn("slow");
-  });
-});
