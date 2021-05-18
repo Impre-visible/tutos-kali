@@ -1,7 +1,9 @@
 var dumpCookie = extractCookies();
 
-if (!dumpCookie.theme) {
+function addCookie() {
+  modal = document.querySelector("#modal");
   document.cookie = "theme=kali";
+  modal.style.visibility = "hidden";
 }
 
 function extractCookies() {
@@ -11,6 +13,7 @@ function extractCookies() {
     return acc;
   }, {});
 }
+console.log(dumpCookie);
 
 window.addEventListener("DOMContentLoaded", function () {
   select = document.querySelector("#select");
@@ -22,6 +25,9 @@ window.addEventListener("DOMContentLoaded", function () {
   body = document.querySelector("#body");
   background_header = document.querySelector(".background_header");
   if (dumpCookie.theme) {
+    modal = document.querySelector("#modal");
+    modal.style.visibility = "hidden";
+    console.log("hey");
     changeTheme(dumpCookie.theme);
   }
   if (select) {
@@ -78,6 +84,13 @@ function changeTheme(value) {
       break;
 
     default:
+      title.innerText = "root@kali: ~/" + title.innerText;
+      home.src = "../images/kali logo.jpg";
+      settings.src = "../images/settings.png";
+      reducer.src = "../images/cross_reducer.png";
+      header.style.backgroundColor = "#181a207a";
+      body.style.backgroundImage = "url(../images/background.jpg)";
+      document.cookie = "theme=kali";
       break;
   }
 }
