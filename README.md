@@ -34,4 +34,4 @@
 
 <h2>Remerciements : </h2>
 <p>Un grand merci à <a href="https://github.com/allombar">Symbiosis</a> pour son aide sur tous le code en js, et son super système de cookies.</p>
-<p>Un énorme merci à tous ceux qui m'ont aidé, principalement sur <a href="https://discord.gg/gpZemxGmrD">Dev'Area</a>.</p>
+<p>Un énorme merci à tous ceux qui m'ont aidé, principalement sur <a href="https://discord.gg/gpZemxGmrD" target="_blank">Dev'Area</a>.</p>
