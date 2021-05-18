@@ -1,7 +1,7 @@
-# Site Web Simple en HTML5, CSS3 et JS.
+# Site Web Simple en HTML5 et CSS3.
 <ul>
   <li>
-    Le lien du site : <a href = "http://tutos-kali.cf/">tutos-kali</a>
+    Le lien du site : <a href = "http://tutos-kali.cf/">tutos-kali.cf</a>
   </li>
 </ul>
 
@@ -27,12 +27,6 @@
 
 <h1>To do list</h1>
 <ul>
-  <li> ❌ Bientot fini | Ajouter plusieurs styles d'interfaces. (Parrot OS, Mac OS, Windows 10)</li>
+  <li> ✔️ | Ajouter plusieurs styles d'interfaces. (Parrot OS, Mac OS, Windows 10)</li>
   <li> ❌ | Agrandir les images au clique.</li>
 </ul>
-
-
-<h2>Remerciements : </h2>
-<p><a href="https://github.com/allombar">Symbiosis</a> pour l'aide apporté pour le js, et sont super système de cookie.</p>
-
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Licence Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />Ce(tte) œuvre est mise à disposition selon les termes de la <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Licence Creative Commons Attribution - Pas d&#39;Utilisation Commerciale - Pas de Modification 4.0 International</a>.
