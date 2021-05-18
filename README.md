@@ -27,6 +27,6 @@
 
 <h1>To do list</h1>
 <ul>
-  <li> ❌ | en travaux | Ajouter plusieurs styles d'interfaces. (Parrot OS, Mac OS, Windows 10)</li>
+  <li> ✔️ | Ajouter plusieurs styles d'interfaces. (Parrot OS, Mac OS, Windows 10)</li>
   <li> ✔️ | Agrandir les images au clique.</li>
 </ul>
