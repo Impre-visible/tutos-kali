@@ -34,6 +34,7 @@ window.addEventListener("DOMContentLoaded", function () {
   if (select) {
     select.addEventListener("change", function (event) {
       changeTheme(event.target.value);
+      window.location.reload();
     });
   }
 });
