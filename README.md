@@ -8,7 +8,7 @@
 # Le design
 
 <p>Le design reprends celui d'un terminal de commande sous <a href = "https://www.kali.org/">Kali Linux</a></p>
-<p>Le texte central en haut, commencant par "root@kali: ~" indique a l'utilisateur sur quel page il se trouve.</p>
+<p>Le texte central en haut, commencant par "root@kali: ~" indique a l'utilisateur sur quel page il se trouve. (Il est adapté en fonction du thème.)</p>
 <p>Le logo en haut a gauche est <a href="https://">cliquable</a> et permet de revenir au menu.</p>
 
 <p>Les curseurs et les polices de textes sont celles utilisées dans un terminal ou de base dans l'os</p>
@@ -27,11 +27,11 @@
 
 <h1>To do list</h1>
 <ul>
-  <li> ✔️ | Ajouter plusieurs styles d'interfaces (Parrot OS, Mac OS, Windows 10).</li>
-  <li> ✔️ | Agrandir les images au clique.</li>
-  <li> ✔️ | Ajout d'un footer pour le(s) cookie(s).</li>
+  <li> [x] - Ajouter plusieurs styles d'interfaces (Parrot OS, Mac OS, Windows 10).</li>
+  <li> [x] - Agrandir les images au clique.</li>
+  <li> [x] - Ajout d'un footer pour le(s) cookie(s).</li>
 </ul>
 
-<h2>Remerciements : </h2>
+<h1>Remerciements : </h1>
 <p>Un grand merci à <a href="https://github.com/allombar">Symbiosis</a> pour son aide sur tous le code en js, et son super système de cookies.</p>
 <p>Un énorme merci à tous ceux qui m'ont aidé, principalement sur <a href="https://discord.gg/gpZemxGmrD" target="_blank">Dev'Area</a>.</p>
