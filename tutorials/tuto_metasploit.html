@@ -11,12 +11,12 @@
     <div id="header" class="header">
       <div class="background_header">
         <a style="float: left" class="btn_home" href="../index.html">
-          <img class="kali_logo_header" src="../images/kali logo.jpg" width="30" height="30" id="home"/>
+          <img class="kali_logo_header" src="../images/kali logo.png" id="home"/>
         </a>
         <a style="float: left" class="btn_home" href="../settings.html">
-          <img class="settings_header" src="../images/settings.png" width="30" height="30" id="settings"/>
+          <img class="settings_header" src="../images/settings.png" id="settings"/>
         </a>
-        <img id="reducer" style="float: right" class="header_cross" src="../images/cross_reducer.png" width="100" height="25"/>
+        <img id="reducer" style="float: right" class="header_cross" src="../images/cross_reducer.png"/>
         <h1 id="title" class="center_window">Metasploit & TheFatRat</h1>
       </div>
     </div>
@@ -55,14 +55,18 @@
       <h2 class="text">root@kali : nano tuto_part2.txt</h2>
      <div class="pic" id="test2">
       <p class="text2">Pour commencer on selectionne <code>"[6] Create Fud Backdoor 1000% with PwnWinds"</code>. Je précise que FUD signifie qu'il sera invisible aux yeux des antivirus !</p>
-      <img alt="terminal linux" src="../images/menu1_fatrat.png" width="300" height="368">
+      <a href="../images/menu1_fatrat.png">
+        <img alt="terminal linux" src="../images/menu1_fatrat.png">
+      </a>
       <p class="text2">Puis on sélectionne <code>"[1] Create a bat file+Powershell (FUD 100%)"</code>.</br>
       Ensuite, on défini l'ip et le port utilisées.</br>
       Je recommande le port <code>4444</code>.</br>
       Puis on définie le nom du fichier <code>.bat</code>.</br>
       Enfin, on sélectionne le Payload, je conseille un bon reverse_tcp sous <code>windows/meterpreter</code>.</br>
       Pour ce qui est de "l'infectation" on voit ca après, mais d'abord, le fichier .bat se trouve dans le dossier <code>/root/TheFatRat/output</code>, vous devez le déplacer a l'un de vos pc sous Windows pour continuer les manipulations.</p>
-      <img alt="terminal linux" src="../images/menu2_fatrat.png" width="300" height="368">
+      <a href="../images/menu2_fatrat.png">
+        <img alt="terminal linux" src="../images/menu2_fatrat.png">
+      </a>
     </div>
     </div>
     <div class="UST">
@@ -102,5 +106,13 @@
       <p class="text">Voila, vous avez réussi à infecter un ordinateur, je précise que ce tutoriel est à but informatif, et éducatif, je ne suis en aucun cas responsable de se que vous faites.</br>
       Dans le prochain tuto, nous allons voir comment faire du phishing avec ngrok.</p>
     </div>
+    <footer>
+      <div id="modal">
+        <p class="footer">
+          Ce site utilise des cookies pour améliorer l'expérience utilisateur !
+          <button onclick="addCookie()" class="button">J'accepte</button>
+        </p>
+      </div>
+    </footer>
 	</body>
 </html>
