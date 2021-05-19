@@ -95,7 +95,7 @@ code {
   font-size: 12px;
   background-color: #6e6e6e;
   border-radius: 3px;
-  font-family: "Fira Code";
+  font-family: "Fira Code", serif;
   padding: 3px;
 }
 
@@ -118,12 +118,12 @@ code {
   height: 10px;
 }
 ::-webkit-scrollbar-button {
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
 }
 ::-webkit-scrollbar-thumb {
   background: #626262;
-  border: 0px solid #000000;
+  border: 0 solid #000000;
   border-radius: 100px;
 }
 ::-webkit-scrollbar-thumb:hover {
@@ -134,8 +134,8 @@ code {
 }
 ::-webkit-scrollbar-track {
   background: #313131;
-  border: 0px outset #313131;
-  border-radius: 0px;
+  border: 0 outset #313131;
+  border-radius: 0;
 }
 ::-webkit-scrollbar-track:hover {
   background: #313131;
@@ -202,7 +202,7 @@ tfoot {
 }
 
 .center_window {
-  font-family: "Cantarell";
+  font-family: "Cantarell", serif;
   text-align: center;
   font-size: 14px;
   color: #d8d8d8;
@@ -220,18 +220,16 @@ tfoot {
   color: rgb(94, 94, 94);
   padding-top: 5px;
   padding-left: 5px;
-  padding-bottom: 0px;
-  padding-right: 0px;
   cursor: url("../cursor/Adwaita/Adwaita-Link Select.cur"), auto;
 }
 
 .center_window_home {
-  font-family: "Cantarell";
+  font-family: "Cantarell", serif;
   text-align: center;
   font-size: 14px;
-  padding-right: 0%;
+  padding-right: 0;
   color: white;
-  margin-left: 0%;
+  margin-left: 0;
 }
 
 .select {
@@ -249,7 +247,6 @@ select {
   box-shadow: none;
   border: 0 !important;
   background: #4b4b4b;
-  background-image: none;
 }
 select::-ms-expand {
   display: none;
@@ -302,17 +299,17 @@ select {
   display: inline-block;
   cursor: url("../cursor/Adwaita/Adwaita-Link Select.cur"), auto;
   color: #ffffff;
-  font-family: Arial;
+  font-family: Arial, serif;
   font-size: 12px;
   padding: 10px 20px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #44c767;
+  text-shadow: 0 1px 0 #44c767;
 }
 
 .button:hover {
   background-color: rgb(57, 119, 26);
   border: 1px solid rgb(57, 119, 26);
-  text-shadow: 0px 1px 0px rgb(57, 119, 26);
+  text-shadow: 0 1px 0 rgb(57, 119, 26);
 }
 
 .button:active {
