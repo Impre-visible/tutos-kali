@@ -44,7 +44,7 @@ function changeTheme(value) {
     case "1":
     case "kali":
       title.innerText = "root@kali: ~/" + title.innerText;
-      home.src = "../images/kali logo.jpg";
+      home.src = "../images/kali logo.png";
       settings.src = "../images/settings.png";
       reducer.src = "../images/cross_reducer.png";
       header.style.backgroundColor = "#181a207a";
@@ -87,7 +87,7 @@ function changeTheme(value) {
 
     default:
       title.innerText = "root@kali: ~/" + title.innerText;
-      home.src = "../images/kali logo.jpg";
+      home.src = "../images/kali logo.png";
       settings.src = "../images/settings.png";
       reducer.src = "../images/cross_reducer.png";
       header.style.backgroundColor = "#181a207a";
