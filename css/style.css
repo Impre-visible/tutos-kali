@@ -233,55 +233,62 @@ tfoot {
 }
 
 .select {
-  position: absolute;
-  top: 25%;
-  left: 41.5%;
+  position: relative;
+  display: inline-block;
+  margin: auto;
+  width: 15%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-select {
+.select select {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px 15px;
+  outline: 0;
+  border: 0px solid #000000;
+  border-radius: 3px;
+  background: #747373;
+  color: #bbb9b9;
+  appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
-  -ms-appearance: none;
-  appearance: none;
-  outline: 0;
-  box-shadow: none;
-  border: 0 !important;
-  background: #4b4b4b;
-}
-select::-ms-expand {
-  display: none;
-}
-.select {
-  position: relative;
-  display: flex;
-  width: 20em;
-  height: 3em;
-  line-height: 3;
-  background: #4b4b4b;
-  overflow: hidden;
-  border-radius: 0.25em;
-}
-select {
-  flex: 1;
-  padding: 0 0.5em;
-  color: #fff;
   cursor: url("../cursor/Adwaita/Adwaita-Link Select.cur"), auto;
 }
-.select::after {
-  content: "\25BC";
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 0 1em;
-  background: #ffffff00;
-  cursor: url("../cursor/Adwaita/Adwaita-Normal Select.cur"), auto;
-  pointer-events: none;
-  -webkit-transition: 0.25s all ease;
-  -o-transition: 0.25s all ease;
-  transition: 0.25s all ease;
+
+.select select::-ms-expand {
+  display: none;
 }
-.select:hover::after {
-  color: #000000;
+
+.select select:hover,
+.select select:focus {
+  color: #bbb9b9;
+  background: #747373;
+}
+
+.select select:disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.select_arrow {
+  position: absolute;
+  top: 16px;
+  right: 15px;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0px 5px;
+  border-color: #000000 transparent transparent transparent;
+}
+
+.select select:hover ~ .select_arrow,
+.select select:focus ~ .select_arrow {
+  border-top-color: #000000;
+}
+
+.select select:disabled ~ .select_arrow {
+  border-top-color: #000000;
 }
 
 #modal {
@@ -324,7 +331,6 @@ select {
 
 .informations {
   text-align: center;
-  padding-top: 12%;
   color: #d8d8d8;
 }
 
