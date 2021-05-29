@@ -28,7 +28,6 @@
 <h1>To do list</h1>
 <ul>
   <li> [x] - Ajouter plusieurs styles d'interfaces (Parrot OS, Mac OS, Windows 10).</li>
-  <li> [x] - Agrandir les images au clique.</li>
   <li> [x] - Ajout d'un footer pour le(s) cookie(s).</li>
 </ul>
 
